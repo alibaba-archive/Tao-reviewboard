@@ -1,0 +1,6 @@
+*.svn/
+*.class
+*.project
+*.DS_Store
+*.classpath
+*.settings
