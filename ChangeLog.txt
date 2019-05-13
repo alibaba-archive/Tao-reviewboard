@@ -1,0 +1,9 @@
+ChangeLog:
+
+ReviewBoard Eclipse V1.0.0（发布日期:2011年10月8日）
+ReviewBoard Eclipse的第一个版本。提供功能包括：
+1.使用首选项配置ReviewBoard服务器、保存常用属性并进行高级功能设置和操作。
+2.Pre-Commit方式提交和更新Request
+3.Post-Commit方式提交和更新Request
+4.在SVN资源历史记录中Post-Commit Request
+5.支持多文件夹、多文件、多Project提交Review，对于用户填写的版本能智能容错。
