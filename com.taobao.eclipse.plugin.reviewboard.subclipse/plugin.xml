@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension point="com.taobao.eclipse.plugin.reviewboard.core.clientRepositoryAwair">
+		<clientRepositoryAwair class="com.taobao.eclipse.plugin.reviewboard.subclipse.clientmanager.SVNClientRepositoryAwair"/>
+   	</extension>
+   	
+   	<extension point="org.eclipse.ui.commands">
+   		<command
+			categoryId="org.tigris.subversion.subclipse.commandCategory"
+			name="%PRE_COMMIT_LABLE"
+			id="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PreCommitReviewBoardAction" />
+		<command
+			categoryId="org.tigris.subversion.subclipse.commandCategory"
+			name="%POST_COMMIT_LABLE"
+			id="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PostCommitReviewBoardAction" />
+   	</extension>
+   	
+   	
+   	<extension point="org.eclipse.ui.commands">
+   		<command
+			categoryId="org.tigris.subversion.subclipse.commandCategory"
+			name="%PRE_COMMIT_LABLE"
+			id="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PreCommitReviewBoardAction_bind" />
+		<command
+			categoryId="org.tigris.subversion.subclipse.commandCategory"
+			name="%POST_COMMIT_LABLE"
+			id="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PostCommitReviewBoardAction_bind" />
+   	</extension>
+   	
+   	<extension point="org.eclipse.ui.popupMenus">
+		<objectContribution
+	        objectClass="org.eclipse.core.resources.mapping.ResourceMapping"
+	        adaptable="true"
+			id="com.taobao.eclipse.plugin.reviewboard.additonal.PreCommit" >
+			<action
+	               label="%POST_COMMIT_LABLE"
+	               class="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PostCommitReviewBoardAction"
+	               tooltip="%POST_COMMIT_LABLE"
+	               icon="icons/logo_small.gif"
+	               menubarPath="additions"
+				   definitionId="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PostCommitReviewBoardAction_bind"
+	               id="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.additions.PostCommitReviewBoardAction">
+	         	</action>
+	            <action
+	               label="%PRE_COMMIT_LABLE"
+	               class="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PreCommitReviewBoardAction"
+	               tooltip="%PRE_COMMIT_LABLE"
+	               icon="icons/logo_small.gif"
+	               menubarPath="additions"
+				   definitionId="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PreCommitReviewBoardAction_bind"
+	               id="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.additions.PreCommitReviewBoardAction">
+	         	</action>
+  		</objectContribution>
+  	</extension>
+   	
+   
+   <extension
+         point="org.eclipse.ui.popupMenus">
+	   		<objectContribution
+	            objectClass="org.eclipse.core.resources.mapping.ResourceMapping"
+	            adaptable="true"
+	            id="org.tigris.subversion.subclipse.ui.ResourceContributions">
+	            <!--Team 右键后的菜单-->
+	   			<action
+	               label="%POST_COMMIT_LABLE"
+	               class="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PostCommitReviewBoardAction"
+	               tooltip="%POST_COMMIT_LABLE"
+	               icon="icons/logo_small.gif"
+	               menubarPath="team.main/group1"
+				   definitionId="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PostCommitReviewBoardAction"
+	               id="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PostCommitReviewBoardAction">
+	         	</action>
+	            <action
+	               label="%PRE_COMMIT_LABLE"
+	               class="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PreCommitReviewBoardAction"
+	               tooltip="%PRE_COMMIT_LABLE"
+	               icon="icons/logo_small.gif"
+	               menubarPath="team.main/group1"
+				   definitionId="com.taobao.eclipse.plugin.reviewboard.subclipse.command.PreCommitReviewBoardAction"
+	               id="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PreCommitReviewBoardAction">
+	         	</action>
+	      	</objectContribution>
+	      	<!--History 右键后的菜单-->
+	      	<objectContribution
+	            objectClass="org.tigris.subversion.subclipse.core.history.LogEntry"
+	            adaptable="true"
+	            id="org.tigris.subversion.subclipse.ui.LogEntryContributions">
+	            <action
+	               label="%POST_COMMIT_LABLE_1"
+	               icon="icons/logo_small.gif"
+	               class="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PostCommitHistoryReviewBoardAction"             
+	               id="com.taobao.eclipse.plugin.reviewboard.subclipse.actions.PostCommitHistoryReviewBoardAction">
+	         	</action> 
+	       </objectContribution>
+   </extension>
+   
+</plugin>

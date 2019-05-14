@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.taobao.eclipse.plugin.reviewboard.core" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.taobao.eclipse.plugin.reviewboard.core" id="clientRepositoryAwair" name="clientRepositoryAwair"/>
+      </appinfo>
+      <documentation>
+         ReviewBoard ClientRepositoryAwair
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <choice minOccurs="0" maxOccurs="unbounded">
+            <element ref="clientRepositoryAwair"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="clientRepositoryAwair">
+      <complexType>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  This extension point requires that a class that implements com.taobao.eclipse.plugin.reviewboard.core.config.clientmanager.IClientRepositoryAwair interface.
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         The following is an example of the extension:
+
+&lt;p&gt;
+&lt;pre&gt;
+&lt;extension
+      point=&quot;com.taobao.eclipse.plugin.reviewboard.core.clientRepositoryAwair&quot;&gt;
+   &lt;listener
+         class=&quot;com.example.xyz.MyClientManagerAwair&quot;/&gt;
+&lt;/extension&gt;
+&lt;/pre&gt;
+&lt;/p&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         This extension point requires that a class that implements com.taobao.eclipse.plugin.reviewboard.core.config.clientmanager.IClientRepositoryAwair interface.
+      </documentation>
+   </annotation>
+
+
+
+</schema>

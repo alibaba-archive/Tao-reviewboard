@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.taobao.eclipse.plugin.reviewboard.core"
+      label="Tao-ReviewBoard core(Required)"
+      version="1.0.0.qualifier"
+      provider-name="TAOBAO-智清、千丫、银时">
+
+   <description url="http://code.taobao.org/">
+      该模块是Tao-ReviewBoard的核心工作模块、首选项配置功能。
+   官方网址：http://code.taobao.org/p/tao-reviewboard
+      provided by 智清、千丫、银时 zhiqing.ht@taobao.com
+   </description>
+
+   <copyright url="http://code.taobao.org/">
+      该模块是Tao-ReviewBoard的核心工作模块、首选项配置功能。
+   官方网址：http://code.taobao.org/p/tao-reviewboard
+      provided by 智清、千丫、银时 zhiqing.ht@taobao.com
+   </copyright>
+
+   <license url="http://code.taobao.org/">
+      该模块是Tao-ReviewBoard的核心工作模块、首选项配置功能。
+   官方网址：http://code.taobao.org/p/tao-reviewboard
+      provided by 智清、千丫、银时 zhiqing.ht@taobao.com
+   </license>
+   
+   <plugin
+         id="com.taobao.eclipse.plugin.reviewboard.core"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+</feature>

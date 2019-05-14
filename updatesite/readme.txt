@@ -1,0 +1,1 @@
+This is the updatesite for the reviewboard eclipse plugin.

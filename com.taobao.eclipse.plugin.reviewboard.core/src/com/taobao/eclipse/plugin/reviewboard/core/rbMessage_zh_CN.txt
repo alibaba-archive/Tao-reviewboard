@@ -1,0 +1,66 @@
+##############################################################
+# 基本信息
+##############################################################
+TITLE_INFORMATION=提示
+
+##############################################################
+# 首选项：Tao-ReviewBoard服务器设置
+##############################################################
+PREFERPAGE_SERVER_LABLE=ReviewBoard服务器信息配置
+PREFERPAGE_SERVER_0=Server
+PREFERPAGE_SERVER_0_DES=格式：http(或https:)://**
+PREFERPAGE_SERVER_1=User ID
+PREFERPAGE_SERVER_1_DES=ReviewBoard注册帐户
+PREFERPAGE_SERVER_2=Password
+PREFERPAGE_SERVER_2_DES=ReviewBoard帐户密码
+PREFERPAGE_ATTRIBUTE_LABLE=常用属性的默认值设定(提交与更新Request时常用的Reviewer信息)
+PREFERPAGE_ATTRIBUTE_0=Groups
+PREFERPAGE_ATTRIBUTE_1=Peoples
+
+##############################################################
+# 首选项：功能高级设置
+##############################################################
+CACHE_RESET_BTN=重置
+CACHE_RESET_LABLE=重置Tao-ReviewBoard服务器本地缓存（包括：Groups、People信息）
+CACHE_RESET_BTN_DES=点击此按钮即可重置Tao-ReviewBoard服务器本地缓存:
+CACHE_RESET_ALREADY=已重置！
+
+START_VERSION_AUTO_LABLE=post-commit模式，自动获取start版本
+START_VERSION_AUTO_DES=自动获取功能会降低post-commit菜单打开速度，请按需配置，缺省为未开启。
+START_VERSION_AUTO_SVNBRANCHES=分支路径下post-commit模式自动获取start版本
+START_VERSION_AUTO_SVNALL=任意路径下post-commit模式自动获取start版本
+
+SETTING_ADV_OTHERS_LABLE=其它
+SETTING_ADV_DIFF_LABLE=diff文件默认编码：
+SETTING_ADV_DIFF_ENCODE_AUTO=自动设置
+
+##############################################################
+# 首选项：页面展示高级设置
+##############################################################
+ADV_PAGESHOW_LABLE=页面显示高级配置
+ADV_PAGESHOW_BUGCLOSED_SHOW=提交request时显示Bug Closed
+ADV_PAGESHOW_DRAFT_SHOW=开启草稿功能
+ADV_PAGESHOW_TESTINGDONE_SHOW=提交request时显示TestingDone
+ADV_PAGESHOW_BASEVERSION_SHOW=pre-commit方式可以设置对比的基础版本
+
+##############################################################
+# plugin.properties内容
+##############################################################
+#PREFE_SETTING_LABLE=Tao-ReviewBoard配置
+#PREFE_ADV_FUNCTION_LABLE=功能高级配置
+#PREFE_ADV_PAGESHOW_LABLE=页面显示高级配置
+
+##############################################################
+# ERROR
+##############################################################
+ERROR_LABLE=ERROR
+ERROR_USERNAMEPASSWORD_0=当指定用户名和密码时，Server、用户名、密码都是必填项！
+ERROR_USERNAMEPASSWORD_1=用户名或密码不正确！
+ERROR_SERVER_NOT_CONFIFIGURED_0=您尚未正确配置ReviewBoard服务器(例如：未保存用户名和密码)，或者ReviewBoard Site当前工作异常。请仔细检查您的ReviewBoard服务器配置!
+
+##############################################################
+# Progress
+##############################################################
+PROGRESS_READING_GROUPS=正在读取Reviewboard groups信息:
+PROGRESS_READING_USERS=正在读取Reviewboard users信息:
+PROGRESS_READING_REPOSITORIES=正在读取Reviewboard repositories信息:

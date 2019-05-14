@@ -1,0 +1,102 @@
+##############################################################
+# 
+##############################################################
+ERROR_INFORMATION_LABLE=错误信息
+PROMPTING_INFORMATION_LABLE=提示信息
+WARNING_LABLE=警告
+ERROR_PREFIX=操作失败，出错原因：
+ERROR_FOLDERNOTSVN=您必须至少选择一个具有SVN属性的文件或文件夹
+ERROR_PROJECT_NOTSAME_REPOSITORY=您选中了多个Project的文件，请确保这些Project隶属于同一个SVN仓库！
+ERROR_SERVER_NOT_CONFIFIGURED=找不到ReviewBoard服务器信息，无法提交Request。错误原因可能是：您尚未在首选项配置服务器信息
+ERROR_NOSVNFILE=您未指定SVN目录或文件
+ERROR_NOT_IPROJECT=您当前操作的Project不是Eclipse的IProject
+ERROR_NOSVNPROPERTIES=您选中的{0}不具备SVN属性
+ERROR_NOSVNPROPERTIES_2=您选中的:{0}不具备SVN属性，因此无法针对该Resource使用Post-Commit功能；请使用Pre-Commit方式针对该Resource操作Request！
+ERROR_NOSVNPROPERTIES_PROJECT=当前工程:{0}不具备SVN属性
+ERROR_COMPARE=比较代码出错，错误原因一般是因为您填写的版本号不正确。出错详情：
+ERROR_COMPARE_1=当前版本暂时不支持文件夹比较。文件夹比较功能将在后面的版本提供，尽请期待！
+ERROR_COMPARE_1=未发现差异！
+ERROR_FILE_REQURIED=您选择了以pre-commit方式提交，因此必须选中修改的文件
+ERROR_SERVER_REQURIED=请配置ReviewBoard服务器相关信息
+ERROR_NOTVALID_REPOSITORY=您的代码所对应的Repository Root与本次Request的Repository的SVN地址不匹配
+ERROR_COMMIT_0=上传至ReviewBoard时出错，出错原因：
+ERROR_COMMIT_1=提交失败，错误原因一般是因为下面之一：\r\n(1)该SVN地址不存在；\r\n(2)您在ReviewBoard服务器尚未配置该SVN Repository;\r\n(3)您提交的版本号信息不正确；\r\n请根据详细错误信息查看您的具体出错的文件(或文件夹)和版本号信息：
+
+ERRO_REQUEST_0=找不到RequestId:{0}的Request，或者您无权操作该Request！
+ERRO_REQUEST_1=RequestId:{0}的Request的状态为submit，请先reopen再提交！
+ERRO_REQUEST_2=RequestId:{0}的Request的状态为discard，因此无法提交，请选择其它request！
+
+PROMPTING_ENCODING_0=您选择的多个文件或目录由于存在编码格式不一致的问题，可能会导致本次Review存在乱码问题，确定继续吗？
+
+SUCCESS_COMMIT=Request提交成功
+SUCCESS_UPDATE=Request更新成功
+SUCCESS_COMMIT_1=提交成功，本次更新的Request ID是：
+SUCCESS_UPDATE_1=更新成功，本次更新的Request ID是：
+
+CHECK_DIFF_0=您当前设置的diff编码格式是{0},未选用{1}方式，可能出现diff文件无法正常浏览，确定继续吗？若为解决乱码问题请继续。
+CHECK_DIFF_1=您选择了以post-commit方式提交，请选择post-commit影响的文件或文件夹。
+
+RECENT_DESCRI_LABLE=<Choose the Latest Descriptions>
+PROJECTS_SELECTED=您选中Project:
+
+##############################################################
+# 
+##############################################################
+UPDATEORCOMMIT_PRE_LABLE=Pre-Commit方式提交或更新Request
+PostReviewBoardAction.dialogTitle=(Post-Commit)Commit or Update Request to ReviewBoard
+PostReviewBoardAction.dialogTitle_1=Post-Commit ReviewBoard
+PreReviewBoardAction.dialogTitle=(Pre-Commit)Commit or Update Request to ReviewBoard
+PreReviewBoardAction.dialogTitle_1=Pre-Commit ReviewBoard
+COMPARE.dialogTitle_1=Version Compare: Working Version:
+OPTIONAL.dialogTitle=Other Optional Information
+information=Server Information
+uildError=A build error occurred after the SVN operation completed
+RepositorySettingTitle=Reviewboard Repository Settings
+RepositorySettingDescription=Server Example: http://reviews.your-domain.org
+
+##############################################################
+# 
+##############################################################
+PAGE_SUMMARY=Summary(Required):
+PAGE_ATTRIBUTES=Attribute
+PAGE_REPOSITORIES=Repository:
+PAGE_GROUPS=Reviewers Group(Optional):
+PAGE_TASKID=Task ID:
+PAGE_BRANCHES=Branch(Optional):
+PAGE_REVIEWPEOPLES=Reviewers People(Required):
+PAGE_BUGCLOSED=Bugs Closed(Optional):
+PAGE_DESCRIPTION=The review request's description(Required)
+PAGE_UPDATE_REQUEST=Update Request:
+PAGE_UPDATE_REQUEST_ID=ReviewBorad Request ID(Requried):
+PAGE_SAVE_AS_DRAFT=save as draft
+PAGE_CODE_COMPARE=compare
+PAGE_TESTINGDONE=The testing done on the review request(Optional):
+PAGE_START_0=compare version for pre-commit:
+PAGE_START_1=compare version(optional):
+PAGE_START_2=the version you want to compare with. if not set, it is the BASE version
+PAGE_VERSION_0=post-commit version：
+
+##############################################################
+# 
+##############################################################
+REQURIED_REQUEST_ID=request ID 是必须的
+VALID_REQUEST_ID=request ID格式不正确，必须是整数!
+REQURIED_SUMMARY=Summary是必须的！
+REQURIED_REVIEWPEOPLES=people是必须的！
+VALID_REVIEWPEOPLES_0=ReviewBoard系统中找不到People:{0},请确定您的输入是否正确！
+VALID_REVIEWPEOPLES_1=在ReviewBoard系统中找不到任何一个您输入的People！
+VALID_GROUPS_0=ReviewBoard系统中找不到Group:{0},请确定您的输入是否正确！
+VALID_GROUPS_1=在ReviewBoard系统中找不到任何一个您输入的Group！
+VALID_BUGCLOSED=BugsClosed：{0}格式不正确，必须是数字！
+VALID_REPOSITORIES=找不到svn地址所对应的Repository，请联系ReviewBoard管理员注册您的SVN地址！
+REQURIED_DESCRIPTION=description是必须的！
+VALID_START_STOP_0=Post-Commit方式下必须指定SVN的start或stop版本号！
+VALID_START_STOP_1=start必须是数字
+VALID_START_STOP_2=stop必须是数字
+VALID_START_STOP_3=您同时填写了start和stop版本号。请确保stop > start ！
+
+
+##############################################################
+# 
+##############################################################
+PROGRESS_READINGCACHE=正在连接ReviewBoard服务器，并读取缓存信息...

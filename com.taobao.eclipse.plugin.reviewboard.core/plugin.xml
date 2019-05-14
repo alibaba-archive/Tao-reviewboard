@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension-point id="clientRepositoryAwair" name="Extension clientRepositoryAwair Regiester" schema="schema/clientRepositoryAwair.exsd"/> 
+	
+	<!-- preference page -->
+	<extension point="org.eclipse.ui.preferencePages">
+		<page
+				name="%PREFE_SETTING_LABLE"
+				class="com.taobao.eclipse.plugin.reviewboard.core.config.preference.ReviewBoardPreferencePage"
+				id="com.taobao.eclipse.plugin.reviewboard.core.config.preference.ReviewBoardPreferencePage"/>
+		<page
+				name="%PREFE_ADV_PAGESHOW_LABLE"
+				category="com.taobao.eclipse.plugin.reviewboard.core.config.preference.ReviewBoardPreferencePage"
+				class="com.taobao.eclipse.plugin.reviewboard.core.config.preference.AdvancePagePreferencePage"
+				id="com.taobao.eclipse.plugin.reviewboard.core.config.preference.AdvancePagePreferencePage"/>
+		<page
+				name="%PREFE_ADV_FUNCTION_LABLE"
+				category="com.taobao.eclipse.plugin.reviewboard.core.config.preference.ReviewBoardPreferencePage"
+				class="com.taobao.eclipse.plugin.reviewboard.core.config.preference.AdvanceFuctionPreferencePage"
+				id="com.taobao.eclipse.plugin.reviewboard.core.config.preference.AdvanceFuctionPreferencePage"/>
+	</extension>
+	<extension point="org.eclipse.core.runtime.preferences">
+		   <initializer class="com.taobao.eclipse.plugin.reviewboard.core.config.preference.PreferenceInitializer"/>
+	</extension>
+
+</plugin>

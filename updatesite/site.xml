@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.taobao.eclipse.plugin.reviewboard.core_1.0.0.201110121144.jar" id="com.taobao.eclipse.plugin.reviewboard.core" version="1.0.0.201110121144">
+      <category name="com.taobao.eclipse.plugin.reviewboard"/>
+   </feature>
+   <feature url="features/com.taobao.eclipse.plugin.reviewboard.subclipse_1.0.0.201110121144.jar" id="com.taobao.eclipse.plugin.reviewboard.subclipse" version="1.0.0.201110121144">
+      <category name="com.taobao.eclipse.plugin.reviewboard"/>
+   </feature>
+   <category-def name="com.taobao.eclipse.plugin.reviewboard" label="Tao-ReviewBoard Plug-in">
+      <description>
+         该插件提供了Eclipse上集成ReviewBoard的功能
+      </description>
+   </category-def>
+</site>
